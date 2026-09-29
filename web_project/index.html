@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio website showcasing web development skills, projects, and contact information.">
+  <title>Khush Patel | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="logo" href="#home" aria-label="Khush Patel home">KP</a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu"
+              aria-controls="navLinks" aria-expanded="false">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="theme-toggle" id="themeToggle" type="button"
+                  aria-label="Toggle dark mode">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content reveal">
+        <p class="eyebrow">WEB DEVELOPMENT PORTFOLIO</p>
+        <h1>Hello, I'm <span>Khush Patel</span></h1>
+        <p class="hero-text">
+          A BTech student building clean, responsive and interactive web experiences
+          with HTML, CSS and JavaScript.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-card reveal" aria-label="Developer illustration">
+        <div class="code-window">
+          <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          <pre><code>&lt;developer&gt;
+  &lt;name&gt;Khush&lt;/name&gt;
+  &lt;skills&gt;HTML CSS JS&lt;/skills&gt;
+  &lt;learning&gt;Every day&lt;/learning&gt;
+&lt;/developer&gt;</code></pre>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">ABOUT ME</p>
+        <h2>Turning ideas into websites</h2>
+      </div>
+      <div class="about-grid">
+        <article class="about-card reveal">
+          <h3>Who I Am</h3>
+          <p>
+            I am a BTech student interested in software development and modern web
+            technologies. I enjoy learning by building practical projects.
+          </p>
+        </article>
+        <article class="about-card reveal">
+          <h3>My Goal</h3>
+          <p>
+            My goal is to improve my programming fundamentals and create accessible,
+            responsive websites that work well on phones, tablets and desktops.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MY SKILLS</p>
+        <h2>Technologies I use</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card reveal">
+          <span class="skill-icon" aria-hidden="true">&lt;/&gt;</span>
+          <h3>HTML5</h3>
+          <p>Semantic structure, forms, tables, media and accessibility.</p>
+        </article>
+        <article class="skill-card reveal">
+          <span class="skill-icon" aria-hidden="true">#</span>
+          <h3>CSS3</h3>
+          <p>Responsive layouts, Flexbox, Grid, animations and modern styling.</p>
+        </article>
+        <article class="skill-card reveal">
+          <span class="skill-icon" aria-hidden="true">JS</span>
+          <h3>JavaScript</h3>
+          <p>DOM manipulation, events, validation and interactive UI features.</p>
+        </article>
+        <article class="skill-card reveal">
+          <span class="skill-icon" aria-hidden="true">Git</span>
+          <h3>Git & GitHub</h3>
+          <p>Version control and publishing static websites with GitHub Pages.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">PROJECTS</p>
+        <h2>Things I have built</h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-number">01</div>
+          <h3>Responsive Portfolio</h3>
+          <p>A personal portfolio demonstrating semantic HTML, responsive CSS and JavaScript interactions.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-number">02</div>
+          <h3>Interactive To-Do List</h3>
+          <p>A browser-based task manager with add, complete and delete functionality using the DOM.</p>
+          <div class="tags"><span>DOM</span><span>Events</span><span>CSS</span></div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-number">03</div>
+          <h3>Student Dashboard</h3>
+          <p>A responsive dashboard concept for presenting subjects, progress and useful student information.</p>
+          <div class="tags"><span>UI</span><span>Responsive</span><span>JavaScript</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">CONTACT</p>
+        <h2>Let's connect</h2>
+      </div>
+      <div class="contact-layout">
+        <div class="contact-info reveal">
+          <h3>Have a project or question?</h3>
+          <p>Send a message using the form. The form includes JavaScript validation for a better user experience.</p>
+          <p><strong>Email:</strong> khush@example.com</p>
+        </div>
+
+        <form id="contactForm" class="contact-form reveal" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+          <small class="error" id="nameError"></small>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+          <small class="error" id="emailError"></small>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <small class="error" id="messageError"></small>
+
+          <button class="btn primary" type="submit">Send Message</button>
+          <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Khush Patel. Built with HTML, CSS & JavaScript.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
